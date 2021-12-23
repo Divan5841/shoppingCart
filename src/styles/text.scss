@@ -1,0 +1,15 @@
+$medium: 600;
+$regular: 400;
+
+@mixin generatorText($size, $weight) {
+  font-size: #{$size}rem;
+  font-weight: $weight;
+}
+
+$textStyles: 'HMR' 2 $medium, 'HSR' 1.5 $medium;
+
+@each $name, $size, $weight in $textStyles {
+  .text_#{$name} {
+    @include generatorText($size, $weight);
+  }
+}

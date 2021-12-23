@@ -1,0 +1,19 @@
+@import 'src/styles/mixins';
+@import 'src/styles/text';
+
+.container {
+  @include Card();
+
+  padding: 12px;
+}
+
+.title {
+  @extend .text_HSR;
+  margin: 0 0 12px;
+}
+
+.formBox {
+  display: grid;
+  grid-template-columns: 1fr 100px max-content;
+  gap: 8px;
+}

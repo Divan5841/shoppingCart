@@ -1,0 +1,33 @@
+@import '~normalize.css';
+@import 'constants';
+@import 'breakpoints';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+
+  font-family: 'Poppins', 'FiraSans', sans-serif;
+  color: $text-main;
+
+  @include breakpoint(small) {
+    font-size: 14px;
+  }
+}
+
+body {
+  overflow: hidden auto;
+  height: 100vh;
+
+  #root {
+    height: inherit;
+  }
+
+  background-color: $gray-1;
+}

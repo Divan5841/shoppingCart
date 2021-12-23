@@ -1,0 +1,22 @@
+.cart {
+  display: grid;
+  grid-template-columns: 1fr repeat(3, max-content);
+  gap: 32px;
+  align-items: center;
+
+  padding: 12px;
+}
+
+.name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.counterBox {
+  display: grid;
+  grid-template-columns: max-content 20px max-content;
+  gap: 8px;
+  align-items: center;
+  justify-items: center;
+}
