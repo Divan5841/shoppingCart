@@ -10,7 +10,7 @@ module.exports = merge(commonConfig, {
     filename: 'static/js/[name].js',
     publicPath: '/',
   },
-  devtool: 'cheap-module-source-map',
+  devtool: 'source-map',
   module: {
     rules: [
       {

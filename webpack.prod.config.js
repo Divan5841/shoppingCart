@@ -12,7 +12,7 @@ module.exports = merge(commonConfig, {
     filename: 'static/js/[name].[contenthash].js',
     publicPath: '/',
   },
-  devtool: 'source-map',
+  devtool: 'cheap-module-source-map',
   optimization: {
     minimizer: [new CssMinimizerPlugin(), '...'],
     splitChunks: {
@@ -26,7 +26,6 @@ module.exports = merge(commonConfig, {
         test: /\.s[ac]ss$/i,
         use: [
           MiniCssExtractPlugin.loader,
-          'style-loader',
           'css-loader',
           'sass-loader',
         ],
