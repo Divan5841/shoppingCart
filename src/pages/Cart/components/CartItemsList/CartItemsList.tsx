@@ -1,8 +1,8 @@
 import React, { FC } from 'react'
 
 import styles from './CartItemsList.module.scss'
-import { ICartItem } from '../../../../store/cart'
 import { CartItem } from '../CartItem/CartItem'
+import { ICartItem } from '../../../../store/cart'
 
 interface ICartItemsListProps {
   cartItems: ICartItem[]

@@ -17,7 +17,10 @@ cartReducer.on(putCartItems, (state, cartItems) => ({
 
 cartReducer.on(addCartItem, (state, cartItem) => ({
   ...state,
-  cartItems: state.cartItems?.set(cartItem.id, cartItem),
+  cartItems: new Map([
+    [cartItem.id, cartItem],
+    ...(state.cartItems?.entries() || []),
+  ]),
 }))
 
 cartReducer.on(updateCartItem, (state, cartItem) => {
