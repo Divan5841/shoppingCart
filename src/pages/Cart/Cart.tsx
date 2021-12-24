@@ -7,10 +7,10 @@ import { NewCartItemForm } from './components/NewCartItemForm/NewCartItemForm'
 
 export const Cart: FC = () => (
   <main className={styles.container}>
-    <CartItemsContainer />
+    <NewCartItemForm />
 
     <Summary onMadeOrder={() => {}} />
 
-    <NewCartItemForm />
+    <CartItemsContainer />
   </main>
 )

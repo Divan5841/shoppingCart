@@ -47,7 +47,12 @@ module.exports = {
     new CleanWebpackPlugin(),
     new NodePolyfillPlugin(),
     new CopyWebpackPlugin({
-      patterns: [{ from: path.resolve(__dirname, 'public') }],
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'public'),
+          to: 'static',
+        },
+      ],
     }),
     new HtmlWebpackPlugin({
       template: './index.html',
