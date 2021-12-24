@@ -10,7 +10,6 @@ module.exports = merge(commonConfig, {
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'static/js/[name].[contenthash].js',
-    publicPath: '/',
   },
   devtool: 'cheap-module-source-map',
   optimization: {

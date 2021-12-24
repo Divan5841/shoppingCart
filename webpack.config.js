@@ -47,7 +47,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new NodePolyfillPlugin(),
     new CopyWebpackPlugin({
-      patterns: [{ from: path.resolve(__dirname, 'public/icon') }],
+      patterns: [{ from: path.resolve(__dirname, 'public') }],
     }),
     new HtmlWebpackPlugin({
       template: './index.html',

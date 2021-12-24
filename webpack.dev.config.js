@@ -8,7 +8,6 @@ module.exports = merge(commonConfig, {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'static/js/[name].js',
-    publicPath: '/',
   },
   devtool: 'source-map',
   module: {
